@@ -1,0 +1,27 @@
+{
+  "name": "michaelmueller/quickmail",
+  "type": "library",
+  "description": "Implementations for Mail related Services inside the Quick Framework",
+  "license": "Apache-2.0",
+  "authors": [
+    {
+      "name": "Michael Mueller",
+      "email": "michaelmuelleronline@gmx.de"
+    }
+  ],
+  "require": {
+    "php": ">=5.6",
+    "michaelmueller/quick": "dev-master",
+    "phpmailer/phpmailer": "~5.2"
+  },
+  "require-dev": {
+  },
+  "autoload": {
+    "psr-4": {
+      "Qck\\Mail\\": "src"
+    },
+    "files": [
+      "src/autoload.php"
+    ]
+  }
+}
