@@ -7,10 +7,10 @@ namespace Qck\Mail;
  *
  * @author muellerm
  */
-class PhpMailerMessageFactory implements \Qck\Interfaces\Mail\MessageFactory
+class PhpMailerMessageFactory implements \Qck\Mail\Interfaces\MessageFactory
 {
 
-  function __construct( \Qck\Interfaces\Mail\SmtpSource $SmtpSource )
+  function __construct( \Qck\Mail\Interfaces\SmtpSource $SmtpSource )
   {
     $this->SmtpSource = $SmtpSource;
   }
@@ -23,7 +23,7 @@ class PhpMailerMessageFactory implements \Qck\Interfaces\Mail\MessageFactory
 
   /**
    *
-   * @var \Qck\Interfaces\Mail\SmtpSource
+   * @var \Qck\Mail\Interfaces\SmtpSource
    */
   protected $SmtpSource;
 

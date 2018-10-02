@@ -7,7 +7,7 @@ namespace Qck\Mail;
  *
  * @author muellerm
  */
-class PartyFactory implements \Qck\Interfaces\Mail\PartyFactory
+class PartyFactory implements \Qck\Mail\Interfaces\PartyFactory
 {
 
   public function create( $Name, $MailAddress )
