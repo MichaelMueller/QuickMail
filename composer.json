@@ -14,14 +14,9 @@
     "michaelmueller/quick": "dev-master",
     "phpmailer/phpmailer": "~5.2"
   },
-  "require-dev": {
-  },
   "autoload": {
     "psr-4": {
       "Qck\\Mail\\": "src"
-    },
-    "files": [
-      "src/quickmail_autoload.php"
-    ]
+    }
   }
 }
