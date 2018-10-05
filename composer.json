@@ -21,7 +21,7 @@
       "Qck\\Mail\\": "src"
     },
     "files": [
-      "src/autoload.php"
+      "src/quickmail_autoload.php"
     ]
   }
 }
