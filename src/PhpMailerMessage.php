@@ -7,10 +7,10 @@ namespace Qck\Mail;
  *
  * @author muellerm
  */
-class PhpMailerMessage implements \Qck\Mail\Interfaces\Message
+class PhpMailerMessage implements \Qck\Interfaces\Mail\Message
 {
 
-  function __construct( \Qck\Mail\Interfaces\Smtp $Smtp, array $Recipients, $Text )
+  function __construct( \Qck\Interfaces\Mail\Smtp $Smtp, array $Recipients, $Text )
   {
     $this->Smtp = $Smtp;
     $this->Recipients = $Recipients;
@@ -100,13 +100,13 @@ class PhpMailerMessage implements \Qck\Mail\Interfaces\Message
   // MANDATORY
   /**
    *
-   * @var \Qck\Mail\Interfaces\Smtp 
+   * @var \Qck\Interfaces\Mail\Smtp 
    */
   protected $Smtp = null;
 
   /**
    *
-   * @var \Qck\Mail\Interfaces\Party[]
+   * @var \Qck\Interfaces\Mail\Party[]
    */
   protected $Recipients;
 

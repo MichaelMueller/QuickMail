@@ -2,15 +2,15 @@
 
 namespace Qck\Mail;
 
-use Qck\Mail\Interfaces\MessageFactory;
-use Qck\Mail\Interfaces\AdminPartySource;
+use Qck\Interfaces\Mail\MessageFactory;
+use Qck\Interfaces\Mail\AdminPartySource;
 
 /**
  * Description of PhpMailer
  *
  * @author muellerm
  */
-class AdminMailer implements \Qck\Mail\Interfaces\AdminMailer
+class AdminMailer implements \Qck\Interfaces\Mail\AdminMailer
 {
 
   function __construct( MessageFactory $MessageFactory, AdminPartySource $AdminPartySource )

@@ -7,7 +7,7 @@ namespace Qck\Mail;
  *
  * @author muellerm
  */
-class Party implements \Qck\Mail\Interfaces\Party
+class Party implements \Qck\Interfaces\Mail\Party
 {
 
   function __construct( $Name, $MailAddress )
